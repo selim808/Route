@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+  </head>
+  <body class="h-100">
+    <div class="w-100 bg-gradient">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-gradient">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">SMART LOGIN </a>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item" role="button" id="logOut">
+                <a class="nav-link" href="index.html">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div
+      class="container text-center w-50 shadow-lg py-3 px-4 rounded-3 position-r">
+      <h1>Welcome, <span id="homeUser"></span></h1>
+    </div>
+    <div class="container text-center w-50 my-5">
+      <form class="d-flex w-50 mx-auto" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          id="searchWord" />
+        <button class="btn btn-outline-success" id="search">Search</button>
+      </form>
+    </div>
+
+    <div class="container text-center my-5 pb-5" id="newsPlace"></div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

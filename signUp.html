@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+  </head>
+  <body class="h-100 py-5">
+    <div class="container text-center w-50 shadow-lg py-3 px-4 rounded-3">
+      <form class="mt-5">
+        <h3 class="mb-4">Smart Login System</h3>
+        <input
+          type="text"
+          class="my-3 form-control"
+          id="signName"
+          placeholder="Enter your Name" />
+        <input
+          type="email"
+          class="my-3 form-control"
+          id="signEmail"
+          placeholder="Enter your Email" />
+        <input
+          type="password"
+          class="form-control my-3"
+          id="signPassword"
+          placeholder="Enter your Password" />
+        <p id="signError" class="text-danger m-0"></p>
+
+        <button
+          type="button"
+          class="btn btn-primary mx-auto cursor my-3 w-100"
+          id="signBtn">
+          Sign up
+        </button>
+        <p>Already have an account? <a href="index.html">Login</a></p>
+      </form>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
