@@ -1,0 +1,30 @@
+nav {
+  background-color: #262936 !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link,
+.navbar-brand {
+  color: rgb(255 255 255);
+}
+
+main {
+  background-image: url(../Assets/banner.png);
+
+  background-position: center center;
+  background-size: cover;
+  background-color: #353535;
+  background-blend-mode: lighten;
+}
+
+footer {
+  background-color: #262936;
+}
+
+.social-links a {
+  display: inline-block;
+  background-color: #1e202b;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
