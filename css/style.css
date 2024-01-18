@@ -1,0 +1,94 @@
+body {
+  background-color: #272b30;
+}
+header img {
+  top: -40px;
+  height: 200px;
+}
+
+.navigation {
+  top: 60px;
+  transform: translateY(-60px);
+  z-index: 20;
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.bg-body-tertiary {
+  background-color: #3a497b !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link.active {
+  color: #0790c3 !important;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+  background-color: #272b30;
+}
+.card:hover {
+  scale: 1.02;
+  border: #00141b 1px solid;
+  box-shadow: #000000 0px 0px 8px 0px;
+  transition: all 0.3s;
+}
+.card img {
+  opacity: 0.8;
+}
+
+.card:hover img {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #272b3062;
+}
+
+.overlay div {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translateX(-50%);
+  background-color: #0073ff62;
+  width: 100px;
+  height: 100px;
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: translate(-50%, 50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, 50%) rotate(360deg);
+  }
+}
+
+.gameDetails {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #272b30;
+}
