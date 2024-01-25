@@ -1,0 +1,45 @@
+header {
+  background-image: url(../Assets/events-heavenly-header.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(194, 57, 57, 0.596);
+  background-blend-mode: overlay;
+}
+
+#openMenu {
+  cursor: pointer;
+}
+
+#home {
+  width: 100%;
+  transition: all 1s;
+}
+#menu {
+  width: 0%;
+  transition: all 1s;
+}
+
+#menu > p:hover,
+#menu li:hover {
+  color: brown;
+}
+
+.singerDescription {
+  display: none;
+}
+
+#joinUs {
+  background-image: url(../Assets/joinUs.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(194, 57, 57, 0.596);
+  background-blend-mode: overlay;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.24);
+}
