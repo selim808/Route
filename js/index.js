@@ -12,7 +12,7 @@ let validation = {
 $("header").css("left", `-${$("#menu").outerWidth()}px`);
 $(".loading-screen2").fadeOut(0);
 $("#searchInputs").hide();
-$("form").hide();
+$("form").removeClass("d-flex").hide();
 $(".inputError").hide();
 $(".mealDetails").hide();
 
@@ -58,7 +58,7 @@ $("#catBtn").click(function (e) {
   closeMenu();
   $(".meals").show();
   $("#searchInputs").hide();
-  $("form").hide();
+  $("form").removeClass("d-flex").hide();
   $(".mealDetails").hide();
   getCat();
 });
@@ -66,7 +66,7 @@ $("#areaBtn").click(function (e) {
   closeMenu();
   $(".meals").show();
   $("#searchInputs").hide();
-  $("form").hide();
+  $("form").removeClass("d-flex").hide();
   $(".mealDetails").hide();
 
   getAreas();
@@ -75,7 +75,7 @@ $("#ingBtn").click(function (e) {
   closeMenu();
   $(".meals").show();
   $("#searchInputs").hide();
-  $("form").hide();
+  $("form").removeClass("d-flex").hide();
   $(".mealDetails").hide();
 
   getIngs();
@@ -323,7 +323,9 @@ function displayIngs(result) {
 
 function displayMealDetails(meal) {
   $(".mealDetails").show();
-
+  $(".meals").hide();
+  $("#searchInputs").hide();
+  $("form").removeClass("d-flex").hide();
   let ingredients = ``;
 
   for (let i = 1; i <= 20; i++) {
