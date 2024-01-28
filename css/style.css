@@ -1,0 +1,100 @@
+.loading-screen {
+  display: flex;
+  z-index: 10;
+}
+.loading-screen2 {
+  display: flex;
+  top: 0px;
+  left: 100px;
+}
+
+header img {
+  width: 50px;
+}
+
+header {
+  transition: all 0.5s;
+  z-index: 9;
+}
+
+#openMenu {
+  cursor: pointer;
+}
+
+#home {
+  width: 100%;
+  transition: all 1s;
+}
+#menu {
+  transition: all 1s;
+}
+
+#navLinks li {
+  position: relative;
+  top: 300px;
+}
+
+#menu > p:hover,
+#menu li:hover {
+  color: brown;
+}
+
+.singerDescription {
+  display: none;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.overlayPop {
+  position: absolute;
+  background-color: #f9f6f6ca;
+  opacity: 0;
+
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transition: all 0.5s;
+}
+
+.oneMeal:hover .overlayPop,
+.oneCat:hover .overlayPop,
+.oneArea:hover .overlayPop {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.search input::placeholder {
+  color: rgb(134, 134, 134);
+  opacity: 1;
+}
+.search input {
+  color: rgb(255, 255, 255);
+}
+
+.search {
+  z-index: 8;
+}
+
+#submit {
+  width: 90px;
+}
+
+form input {
+  color: rgb(0, 0, 0);
+}
+
+.mealDetails {
+  color: white;
+  position: absolute;
+}
