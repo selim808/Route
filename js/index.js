@@ -56,20 +56,26 @@ $("#MenuButton").click(() => {
 });
 $("#catBtn").click(function (e) {
   closeMenu();
+  $(".meals").show();
   $("#searchInputs").hide();
+  $("form").hide();
   $(".mealDetails").hide();
   getCat();
 });
 $("#areaBtn").click(function (e) {
   closeMenu();
+  $(".meals").show();
   $("#searchInputs").hide();
+  $("form").hide();
   $(".mealDetails").hide();
 
   getAreas();
 });
 $("#ingBtn").click(function (e) {
   closeMenu();
+  $(".meals").show();
   $("#searchInputs").hide();
+  $("form").hide();
   $(".mealDetails").hide();
 
   getIngs();
@@ -79,7 +85,6 @@ $("#conBtn").click(function (e) {
   $("#searchInputs").hide();
   $(".meals").hide();
   $(".mealDetails").hide();
-
   $("form").addClass("d-flex").show();
 });
 
